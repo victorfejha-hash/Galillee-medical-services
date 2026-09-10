@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galillee Medical Center | Your Health, Our Priority – Uganda</title>
+  <meta name="description" content="Galillee Medical Center in Uganda provides quality healthcare services, pharmacy and dispensary, laboratory tests, maternal & child care, vaccination and community health services.">
+  <meta name="keywords" content="Galillee Medical Center, Uganda medical center, pharmacy Uganda, healthcare Uganda, dispensary, consultations">
+  <meta name="author" content="Galillee Medical Center">
+  <meta property="og:title" content="Galillee Medical Center – Your Health, Our Priority">
+  <meta property="og:description" content="Quality healthcare, pharmacy and community health services in Uganda.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="theme-color" content="#0d6efd">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --primary-dark: #0a58ca;
+      --primary-light: #e7f1ff;
+      --accent: #198754;
+      --accent-light: #d1e7dd;
+      --text: #212529;
+      --text-muted: #6c757d;
+      --bg: #f8f9fa;
+      --white: #ffffff;
+      --border: #dee2e6;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+      --radius: 12px;
+      --transition: 0.25s ease;
+      --whatsapp: #25d366;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+    /* Header */
+    .header {
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      gap: 12px;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--text);
+    }
+    .logo-wrap img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .logo-text { line-height: 1.2; }
+    .logo-text span { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-muted); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 4px;
+      align-items: center;
+    }
+    .nav-links a {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+    .nav-cta {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+    }
+    .nav-cta:hover { background: var(--primary-dark) !important; }
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+    .hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 60%, #084298 100%);
+      color: var(--white);
+      padding: 64px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.6;
+    }
+    .hero-content {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .hero-tagline {
+      font-size: 1.15rem;
+      opacity: 0.95;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .hero-intro {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 28px;
+      max-width: 520px;
+    }
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: all var(--transition);
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--white);
+      color: var(--primary);
+    }
+    .btn-primary:hover {
+      background: #f0f4ff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: var(--white);
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .btn-accent:hover {
+      background: #157347;
+      transform: translateY(-1px);
+    }
+    .btn-sm { padding: 8px 16px; font-size: 0.875rem; }
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-logo-card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .hero-logo-card img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: var(--white);
+      padding: 8px;
+    }
+    .hero-logo-card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    /* Sections */
+    section { padding: 64px 0; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .section-title .underline {
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      border-radius: 2px;
+      margin: 12px auto 0;
+    }
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .about-content h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .about-content p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--white);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+    .feature-item h4 { font-size: 0.95rem; margin-bottom: 4px; }
+    .feature-item p { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      border: 1px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-light);
+    }
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--primary-light);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .service-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .service-card .btn { width: 100%; }
+    /* Pharmacy */
+    .pharmacy-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+      align-items: center;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 200px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px 12px 44px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      background: var(--white);
+      transition: border-color var(--transition);
+    }
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(13,110,253,0.15);
+    }
+    .search-box::before {
+      content: "🔍";
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      opacity: 0.5;
+    }
+    .filter-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .product-img-wrap {
+      position: relative;
+      height: 180px;
+      background: #f1f3f5;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.05);
+    }
+    .product-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+    .product-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-body h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .product-cat {
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .product-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .product-notice {
+      font-size: 0.75rem;
+      color: #856404;
+      background: #fff3cd;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .product-body .btn { width: 100%; }
+    .no-products {
+      text-align: center;
+      padding: 48px 16px;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+    /* Disclaimer */
+    .medical-disclaimer {
+      background: #fff3cd;
+      border: 1px solid #ffecb5;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 0.9rem;
+      color: #664d03;
+    }
+    .medical-disclaimer strong { display: block; margin-bottom: 4px; }
+    /* Appointment */
+    .appointment-section {
+      background: var(--white);
+    }
+    .form-card {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      background: var(--white);
+      transition: border-color var(--transition);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(13,110,253,0.12);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px 16px;
+    }
+    .form-success.show { display: block; }
+    .form-success .icon {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .contact-info-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .contact-item:last-child { margin-bottom: 0; }
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .contact-item h4 { font-size: 0.95rem; margin-bottom: 2px; }
+    .contact-item p, .contact-item a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .map-placeholder {
+      background: #e9ecef;
+      border-radius: var(--radius);
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-align: center;
+      padding: 20px;
+      border: 2px dashed var(--border);
+    }
+    /* Footer */
+    .footer {
+      background: #0a2540;
+      color: #cfd8e3;
+      padding: 48px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .footer-brand img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--white);
+      padding: 4px;
+      margin-bottom: 12px;
+    }
+    .footer-brand h3 {
+      color: var(--white);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      opacity: 0.85;
+    }
+    .footer h4 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 8px; }
+    .footer ul a {
+      color: #cfd8e3;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+    .footer ul a:hover { opacity: 1; color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    .footer-links a { color: #cfd8e3; margin-left: 16px; }
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background: var(--whatsapp);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      z-index: 999;
+      transition: transform var(--transition), box-shadow var(--transition);
+      color: white;
+      font-size: 1.8rem;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+      color: white;
+    }
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .modal-overlay.show {
+      display: flex;
+      opacity: 1;
+    }
+    .modal {
+      background: var(--white);
+      border-radius: var(--radius);
+      max-width: 640px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.25s ease;
+    }
+    .modal-overlay.show .modal { transform: translateY(0); }
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      background: rgba(0,0,0,0.08);
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+    .modal-img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      background: #f1f3f5;
+    }
+    .modal-body { padding: 20px 24px 28px; }
+    .modal-body h3 { font-size: 1.25rem; margin-bottom: 6px; }
+    .modal-body .product-cat { margin-bottom: 12px; }
+    .modal-body p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 12px; }
+    /* Privacy */
+    .legal-section {
+      background: var(--white);
+      padding: 48px 0;
+    }
+    .legal-content {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    .legal-content h3 {
+      color: var(--text);
+      margin: 24px 0 8px;
+      font-size: 1.1rem;
+    }
+    .legal-content p { margin-bottom: 12px; }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-content { grid-template-columns: 1fr; text-align: center; }
+      .hero-intro { margin-left: auto; margin-right: auto; }
+      .hero-btns { justify-content: center; }
+      .hero-visual { order: -1; }
+      .hero-logo-card img { width: 100px; height: 100px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transform: translateY(-120%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        gap: 4px;
+      }
+      .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+      .nav-links a { width: 100%; text-align: center; padding: 12px; }
+      .hamburger { display: flex; }
+      .about-features { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      section { padding: 48px 0; }
+      .hero { padding: 48px 0 56px; }
+    }
+    @media (max-width: 480px) {
+      .logo-text { font-size: 0.95rem; }
+      .logo-wrap img { width: 40px; height: 40px; }
+      .btn { padding: 11px 18px; font-size: 0.9rem; }
+      .products-grid { grid-template-columns: 1fr; }
+      .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+    }
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- CONFIG: Edit business details here -->
+  <script>
+    // ===== EASY EDIT CONFIGURATION =====
+    const CONFIG = {
+      businessName: "Galillee Medical Center",
+      tagline: "Your Health, Our Priority",
+      email: "galilleemedicalcenter@gmail.com",
+      phone: "+256 XXX XXX XXX",          // Replace with real number
+      whatsapp: "256XXXXXXXXX",           // Country code + number, no + or spaces
+      address: "Uganda",                  // Replace with full address
+      hours: "Mon – Sat: 8:00 AM – 6:00 PM | Sunday: Closed",
+      social: {
+        facebook: "#",
+        twitter: "#",
+        instagram: "#"
+      }
+    };
+  </script>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="logo-wrap">
+          <img src="images/logo.png" alt="Galillee Medical Center logo" width="48" height="48">
+          <div class="logo-text">
+            Galillee Medical Center
+            <span>Your Health, Our Priority</span>
+          </div>
+        </a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pharmacy">Pharmacy</a></li>
+          <li><a href="#appointment">Appointments</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Galillee Medical Center</h1>
+            <p class="hero-tagline">Your Health, Our Priority</p>
+            <p class="hero-intro">
+              Providing quality healthcare services, reliable pharmacy support and community-focused medical care in Uganda. We are committed to professional, patient-centred service for individuals and families.
+            </p>
+            <div class="hero-btns">
+              <a href="#appointment" class="btn btn-primary">Book an Appointment</a>
+              <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-logo-card">
+              <img src="images/logo.png" alt="Galillee Medical Center">
+              <p>Quality Healthcare · Safe Medicines · Healthier Communities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <div class="underline"></div>
+          <p>A community-focused medical centre dedicated to accessible, professional healthcare in Uganda.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Who We Are</h3>
+            <p>
+              Galillee Medical Center is a healthcare facility in Uganda offering medical consultations, pharmacy/dispensary services and supportive care for patients of all ages. We aim to make quality care approachable and trustworthy for the communities we serve.
+            </p>
+            <p>
+              Our approach is patient-centred: we listen, explain options clearly, and work with you to support your health needs. We emphasise professionalism, respect and continuous improvement in the services we provide.
+            </p>
+            <p>
+              <strong>Note:</strong> Specific practitioner qualifications, licensing details and partnerships will be updated by the centre as official information is confirmed.
+            </p>
+          </div>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🏥</div>
+              <div>
+                <h4>Patient-Centred Care</h4>
+                <p>We prioritise clear communication and respect for every patient.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">💊</div>
+              <div>
+                <h4>Pharmacy & Dispensary</h4>
+                <p>Access to essential medicines with professional guidance.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+              <div>
+                <h4>Family & Community</h4>
+                <p>Services that support individuals and families across age groups.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">✅</div>
+              <div>
+                <h4>Professional Standards</h4>
+                <p>Commitment to safe practices and continuous quality improvement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" style="background: var(--white);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <div class="underline"></div>
+          <p>Healthcare services available at Galillee Medical Center. Details may be updated as the centre expands offerings.</p>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+          <!-- Populated by JS for easy editing -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pharmacy -->
+    <section id="pharmacy">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pharmacy & Products</h2>
+          <div class="underline"></div>
+          <p>Browse medicines and health products available at our dispensary. Contact us for availability and professional advice.</p>
+        </div>
+
+        <div class="medical-disclaimer">
+          <strong>Important Medical Notice</strong>
+          Prescription medicines are supplied according to applicable requirements. Consult a qualified healthcare professional before using any medicine. This catalogue is for information only and does not replace medical advice. Do not self-medicate.
+        </div>
+
+        <div class="pharmacy-controls">
+          <div class="search-box">
+            <label for="productSearch" class="sr-only">Search products</label>
+            <input type="search" id="productSearch" placeholder="Search products by name or category..." aria-label="Search products">
+          </div>
+          <div class="filter-btns" id="filterBtns" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-filter="all">All</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid" role="list">
+          <!-- Products rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section id="appointment" class="appointment-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Book an Appointment</h2>
+          <div class="underline"></div>
+          <p>Request an appointment. Our team will confirm availability with you.</p>
+        </div>
+        <div class="form-card">
+          <form id="appointmentForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required autocomplete="name" placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+256...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prefDate">Preferred Date *</label>
+                <input type="date" id="prefDate" name="prefDate" required>
+              </div>
+              <div class="form-group">
+                <label for="prefTime">Preferred Time *</label>
+                <select id="prefTime" name="prefTime" required>
+                  <option value="">Select time</option>
+                  <option value="Morning (8–12)">Morning (8:00 – 12:00)</option>
+                  <option value="Afternoon (12–16)">Afternoon (12:00 – 16:00)</option>
+                  <option value="Evening (16–18)">Evening (16:00 – 18:00)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="General Consultation">General Consultation</option>
+                <option value="Pharmacy Enquiry">Pharmacy Enquiry</option>
+                <option value="Laboratory">Laboratory</option>
+                <option value="Maternal & Child Care">Maternal & Child Care</option>
+                <option value="Vaccination">Vaccination & Immunization</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Any additional information..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Appointment Request</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="icon" aria-hidden="true">✓</div>
+            <h3>Request Received</h3>
+            <p>Thank you. We have received your appointment request. Our team will contact you shortly to confirm the details.</p>
+            <button type="button" class="btn btn-accent" onclick="resetForm()" style="margin-top:16px;">Submit Another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <div class="underline"></div>
+          <p>Reach Galillee Medical Center for enquiries, appointments or pharmacy support.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p id="contactAddress">Uganda (full address to be confirmed)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p id="contactPhone">+256 XXX XXX XXX</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:galilleemedicalcenter@gmail.com" id="contactEmail">galilleemedicalcenter@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">🕐</div>
+              <div>
+                <h4>Opening Hours</h4>
+                <p id="contactHours">Mon – Sat: 8:00 AM – 6:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+            <div style="margin-top:24px;">
+              <a href="#" id="whatsappLink" class="btn btn-accent" target="_blank" rel="noopener" style="width:100%;">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="map-placeholder" role="img" aria-label="Map location placeholder">
+              <div>
+                <p><strong>Google Maps</strong></p>
+                <p>Replace this section with an embedded Google Map of the clinic location once the exact address is confirmed.</p>
+              </div>
+            </div>
+            <form id="contactForm" style="margin-top:20px;" class="form-card" novalidate>
+              <h3 style="margin-bottom:16px;font-size:1.1rem;">Send a Message</h3>
+              <div class="form-group">
+                <label for="cName">Name *</label>
+                <input type="text" id="cName" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="cPhone">Phone *</label>
+                <input type="tel" id="cPhone" required placeholder="+256...">
+              </div>
+              <div class="form-group">
+                <label for="cMsg">Message *</label>
+                <textarea id="cMsg" rows="3" required placeholder="How can we help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal -->
+    <section class="legal-section" id="legal">
+      <div class="container">
+        <div class="legal-content">
+          <h2 style="text-align:center;margin-bottom:8px;color:var(--text);">Privacy & Disclaimer</h2>
+          <div class="underline" style="margin:0 auto 24px;"></div>
+          <h3>Privacy Notice</h3>
+          <p>
+            Galillee Medical Center respects your privacy. Information submitted through appointment or contact forms is used solely to respond to your request and provide related services. We do not sell or share personal data with third parties for marketing. Sensitive medical details should only be shared during a consultation with a qualified professional.
+          </p>
+          <h3>Medical Disclaimer</h3>
+          <p>
+            Content on this website, including product descriptions, is for general information only and does not constitute medical advice, diagnosis or treatment. Always seek the advice of a qualified healthcare provider with any questions regarding a medical condition or medicine. Never disregard professional medical advice or delay seeking it because of something you have read here.
+          </p>
+          <h3>Prescription Medicines</h3>
+          <p>
+            Prescription-only medicines are dispensed in accordance with applicable Ugandan regulations and only where a valid prescription or authorised supply is required. Self-medication with prescription products is not recommended.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Galillee Medical Center">
+          <h3>Galillee Medical Center</h3>
+          <p>Your Health, Our Priority. Quality healthcare, pharmacy services and community support in Uganda.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pharmacy">Pharmacy</a></li>
+            <li><a href="#appointment">Appointments</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li id="footerPhone">+256 XXX XXX XXX</li>
+            <li><a href="mailto:galilleemedicalcenter@gmail.com">galilleemedicalcenter@gmail.com</a></li>
+            <li id="footerAddress">Uganda</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul>
+            <li id="footerHours">Mon – Sat: 8:00 AM – 6:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+          <h4 style="margin-top:16px;">Follow</h4>
+          <ul>
+            <li><a href="#" id="fbLink">Facebook</a></li>
+            <li><a href="#" id="twLink">X / Twitter</a></li>
+            <li><a href="#" id="igLink">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Galillee Medical Center. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#legal">Privacy</a>
+          <a href="#legal">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <img class="modal-img" id="modalImg" src="" alt="">
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <div class="product-cat" id="modalCat"></div>
+        <p id="modalDesc"></p>
+        <div class="product-notice" id="modalNotice" style="display:none;"></div>
+        <a href="#" class="btn btn-accent" id="modalContact" style="width:100%;margin-top:12px;">Contact Pharmacy</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== SERVICES (easy to edit) =====
+    const SERVICES = [
+      {
+        icon: "🩺",
+        title: "General Consultations",
+        description: "Professional medical consultations for common health concerns. Our team provides assessment and guidance tailored to your needs."
+      },
+      {
+        icon: "💊",
+        title: "Pharmacy & Dispensary",
+        description: "Access to essential medicines and health products. Prescription medicines are supplied according to applicable requirements."
+      },
+      {
+        icon: "🔬",
+        title: "Laboratory Services",
+        description: "Supportive laboratory testing to aid diagnosis and monitoring. (Confirm available tests with the centre.)"
+      },
+      {
+        icon: "👶",
+        title: "Maternal & Child Care",
+        description: "Healthcare support for mothers and children. Please contact us for specific services available."
+      },
+      {
+        icon: "💉",
+        title: "Vaccination & Immunization",
+        description: "Immunization services as available. Enquire for current vaccines and schedules."
+      },
+      {
+        icon: "📋",
+        title: "Health Consultations",
+        description: "Guidance on general wellness, chronic condition support and preventive care discussions."
+      }
+    ];
+
+    // ===== PRODUCTS (from uploaded images – factual, no invented claims) =====
+    // Images are group photos; each entry uses the most relevant photo.
+    const PRODUCTS = [
+      {
+        id: 1,
+        name: "Dawasolone (Prednisolone 5 mg)",
+        category: "Corticosteroid",
+        description: "Prednisolone tablets. Corticosteroid used under medical supervision for various inflammatory and immune-related conditions.",
+        image: "images/products/dawasolone-prednisolone.jpg",
+        prescription: true
+      },
+      {
+        id: 2,
+        name: "Ro-Pericem (Piroxicam 20 mg)",
+        category: "Pain Relief / NSAID",
+        description: "Piroxicam capsules. Non-steroidal anti-inflammatory medicine used for pain and inflammation as directed by a healthcare professional.",
+        image: "images/products/pain-relief-group1.jpg",
+        prescription: true
+      },
+      {
+        id: 3,
+        name: "REVIDOL (Paracetamol 500 mg)",
+        category: "Pain & Fever",
+        description: "Paracetamol tablets for the relief of mild to moderate pain and fever. Follow package or professional advice.",
+        image: "images/products/pain-relief-group1.jpg",
+        prescription: false
+      },
+      {
+        id: 4,
+        name: "INDOREN (Indometacin 25 mg)",
+        category: "Pain Relief / NSAID",
+        description: "Indometacin capsules. Anti-inflammatory analgesic used under medical direction.",
+        image: "images/products/pain-relief-group1.jpg",
+        prescription: true
+      },
+      {
+        id: 5,
+        name: "Dicloren 50 (Diclofenac 50 mg)",
+        category: "Pain Relief / NSAID",
+        description: "Diclofenac tablets. Used for pain, inflammation and related conditions as advised by a professional.",
+        image: "images/products/pain-relief-group1.jpg",
+        prescription: true
+      },
+      {
+        id: 6,
+        name: "PROXYREN (Piroxicam)",
+        category: "Pain Relief / NSAID",
+        description: "Piroxicam capsules for pain and inflammation under professional guidance.",
+        image: "images/products/pain-relief-group2.jpg",
+        prescription: true
+      },
+      {
+        id: 7,
+        name: "ACTINAC Plus",
+        category: "Pain Relief",
+        description: "Combination pain-relief preparation. Confirm composition and use with pharmacy staff.",
+        image: "images/products/pain-relief-group2.jpg",
+        prescription: false
+      },
+      {
+        id: 8,
+        name: "SANIX-DS 100 (Cefixime Oral Suspension)",
+        category: "Antibiotic",
+        description: "Cefixime for oral suspension (100 mg/5 ml). Antibiotic for bacterial infections as prescribed.",
+        image: "images/products/antibiotics-suspensions.jpg",
+        prescription: true
+      },
+      {
+        id: 9,
+        name: "AGOMETROL (Metronidazole Oral Suspension)",
+        category: "Antibiotic / Antiparasitic",
+        description: "Metronidazole oral suspension for paediatric use. Used for certain infections under medical advice.",
+        image: "images/products/antibiotics-suspensions.jpg",
+        prescription: true
+      },
+      {
+        id: 10,
+        name: "METROREN (Metronidazole)",
+        category: "Antibiotic / Antiparasitic",
+        description: "Metronidazole oral suspension / tablets. For specific infections as directed by a healthcare professional.",
+        image: "images/products/antibiotics-suspensions.jpg",
+        prescription: true
+      },
+      {
+        id: 11,
+        name: "Unisten (Clotrimazole 1% Cream)",
+        category: "Antifungal",
+        description: "Clotrimazole cream for topical antifungal use. Follow directions on pack or professional advice.",
+        image: "images/products/creams-ointments.jpg",
+        prescription: false
+      },
+      {
+        id: 12,
+        name: "Ocucycline (Tetracycline Eye Ointment 1%)",
+        category: "Eye Care / Antibiotic",
+        description: "Tetracycline hydrochloride ophthalmic ointment for eye infections as directed by a professional.",
+        image: "images/products/creams-ointments.jpg",
+        prescription: true
+      },
+      {
+        id: 13,
+        name: "CADIPHEN Cough Expectorant",
+        category: "Cough & Cold",
+        description: "Cough expectorant / antitussive preparation. Use as directed for symptomatic relief of cough.",
+        image: "images/products/cough-syrups.jpg",
+        prescription: false
+      },
+      {
+        id: 14,
+        name: "APDYL-H",
+        category: "Cough & Cold",
+        description: "Herbal / cough preparation. Confirm ingredients and suitable use with pharmacy staff.",
+        image: "images/products/cough-syrups.jpg",
+        prescription: false
+      },
+      {
+        id: 15,
+        name: "BRO-ZEDEX Cough Syrup",
+        category: "Cough & Cold",
+        description: "Cough syrup for symptomatic relief. Follow dosing instructions carefully, especially for children.",
+        image: "images/products/cough-syrups.jpg",
+        prescription: false
+      },
+      {
+        id: 16,
+        name: "ESOZ-20 (Esomeprazole 20 mg)",
+        category: "Gastrointestinal",
+        description: "Esomeprazole tablets. Proton-pump inhibitor used for acid-related conditions under medical advice.",
+        image: "images/products/gi-ors.jpg",
+        prescription: true
+      },
+      {
+        id: 17,
+        name: "ELECTRORUSH Oral Rehydration Salts",
+        category: "Rehydration",
+        description: "Oral rehydration salt powder. Used to replace fluids and electrolytes lost due to diarrhoea or dehydration.",
+        image: "images/products/gi-ors.jpg",
+        prescription: false
+      },
+      {
+        id: 18,
+        name: "ibumex Ibuprofen Suspension (for children)",
+        category: "Pain & Fever (Paediatric)",
+        description: "Ibuprofen suspension for children for pain and fever relief. Use correct dose by weight/age as advised.",
+        image: "images/products/pediatric-suspensions.jpg",
+        prescription: false
+      },
+      {
+        id: 19,
+        name: "Curamol Suspension (Paracetamol)",
+        category: "Pain & Fever (Paediatric)",
+        description: "Paracetamol suspension for children. For pain and fever; follow age/weight dosing guidance.",
+        image: "images/products/pediatric-suspensions.jpg",
+        prescription: false
+      },
+      {
+        id: 20,
+        name: "Dawa-CPM (Chlorpheniramine)",
+        category: "Allergy / Antihistamine",
+        description: "Chlorpheniramine maleate syrup. Antihistamine for allergic symptoms as directed.",
+        image: "images/products/pediatric-suspensions.jpg",
+        prescription: false
+      },
+      {
+        id: 21,
+        name: "Dawamox (Amoxicillin Oral Suspension)",
+        category: "Antibiotic",
+        description: "Amoxicillin powder for oral suspension. Broad-spectrum antibiotic used only when prescribed.",
+        image: "images/products/amoxicillin-ampiclo.jpg",
+        prescription: true
+      },
+      {
+        id: 22,
+        name: "Ampiclo-Dawa (Ampicillin / Cloxacillin)",
+        category: "Antibiotic",
+        description: "Ampicillin/Cloxacillin oral suspension. Combination antibiotic for prescribed bacterial infections.",
+        image: "images/products/amoxicillin-ampiclo.jpg",
+        prescription: true
+      },
+      {
+        id: 23,
+        name: "Moxacil-250 (Amoxicillin 250 mg)",
+        category: "Antibiotic",
+        description: "Amoxicillin capsules. Antibiotic for bacterial infections as prescribed by a healthcare professional.",
+        image: "images/products/antibiotics-tablets.jpg",
+        prescription: true
+      },
+      {
+        id: 24,
+        name: "THEOFLEX-250 (Cefalexin 250 mg)",
+        category: "Antibiotic",
+        description: "Cefalexin capsules. Cephalosporin antibiotic used under medical direction.",
+        image: "images/products/antibiotics-tablets.jpg",
+        prescription: true
+      },
+      {
+        id: 25,
+        name: "CIPROX (Ciprofloxacin 500 mg)",
+        category: "Antibiotic",
+        description: "Ciprofloxacin tablets. Fluoroquinolone antibiotic for specific infections as prescribed.",
+        image: "images/products/antibiotics-tablets.jpg",
+        prescription: true
+      },
+      {
+        id: 26,
+        name: "AMCLOREN (Ampicillin & Cloxacillin)",
+        category: "Antibiotic",
+        description: "Ampicillin and Cloxacillin capsules. Combination antibiotic for prescribed use only.",
+        image: "images/products/antibiotics-tablets.jpg",
+        prescription: true
+      },
+      {
+        id: 27,
+        name: "FLUREV (Fluconazole 200 mg)",
+        category: "Antifungal",
+        description: "Fluconazole capsules. Antifungal medicine used for certain fungal infections under professional care.",
+        image: "images/products/antifungals-antibiotics.jpg",
+        prescription: true
+      },
+      {
+        id: 28,
+        name: "METROREN (Metronidazole Tablets)",
+        category: "Antibiotic / Antiparasitic",
+        description: "Metronidazole tablets for specific bacterial and parasitic infections as directed by a clinician.",
+        image: "images/products/antifungals-antibiotics.jpg",
+        prescription: true
+      },
+      {
+        id: 29,
+        name: "COTREV-480 (Co-trimoxazole)",
+        category: "Antibiotic",
+        description: "Co-trimoxazole (Sulfamethoxazole + Trimethoprim) tablets. Used for certain bacterial infections when prescribed.",
+        image: "images/products/antifungals-antibiotics.jpg",
+        prescription: true
+      }
+    ];
+
+    // ===== INIT =====
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Apply CONFIG
+    function applyConfig() {
+      document.getElementById("contactPhone").textContent = CONFIG.phone;
+      document.getElementById("footerPhone").textContent = CONFIG.phone;
+      document.getElementById("contactAddress").textContent = CONFIG.address;
+      document.getElementById("footerAddress").textContent = CONFIG.address;
+      document.getElementById("contactHours").innerHTML = CONFIG.hours.replace("|", "<br>");
+      document.getElementById("footerHours").textContent = CONFIG.hours.split("|")[0].trim();
+      document.getElementById("contactEmail").href = "mailto:" + CONFIG.email;
+      document.getElementById("contactEmail").textContent = CONFIG.email;
+
+      const waMsg = encodeURIComponent("Hello Galillee Medical Center, I would like to make an enquiry.");
+      const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${waMsg}`;
+      document.getElementById("whatsappFloat").href = waUrl;
+      document.getElementById("whatsappLink").href = waUrl;
+
+      document.getElementById("fbLink").href = CONFIG.social.facebook;
+      document.getElementById("twLink").href = CONFIG.social.twitter;
+      document.getElementById("igLink").href = CONFIG.social.instagram;
+    }
+    applyConfig();
+
+    // Mobile nav
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      hamburger.classList.toggle("active", open);
+      hamburger.setAttribute("aria-expanded", open);
+    });
+    navLinks.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        hamburger.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Services render
+    const servicesGrid = document.getElementById("servicesGrid");
+    SERVICES.forEach(s => {
+      const card = document.createElement("article");
+      card.className = "service-card";
+      card.innerHTML = `
+        <div class="service-icon" aria-hidden="true">${s.icon}</div>
+        <h3>${s.title}</h3>
+        <p>${s.description}</p>
+        <a href="#appointment" class="btn btn-primary btn-sm">Book / Enquire</a>
+      `;
+      servicesGrid.appendChild(card);
+    });
+
+    // Products
+    const productsGrid = document.getElementById("productsGrid");
+    const filterBtns = document.getElementById("filterBtns");
+    const searchInput = document.getElementById("productSearch");
+    let currentFilter = "all";
+    let currentSearch = "";
+
+    // Build unique categories
+    const categories = [...new Set(PRODUCTS.map(p => p.category))];
+    categories.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "filter-btn";
+      btn.dataset.filter = cat;
+      btn.textContent = cat;
+      filterBtns.appendChild(btn);
+    });
+
+    function renderProducts() {
+      const filtered = PRODUCTS.filter(p => {
+        const matchCat = currentFilter === "all" || p.category === currentFilter;
+        const q = currentSearch.toLowerCase();
+        const matchSearch = !q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || p.description.toLowerCase().includes(q);
+        return matchCat && matchSearch;
+      });
+
+      productsGrid.innerHTML = "";
+      if (filtered.length === 0) {
+        productsGrid.innerHTML = `<div class="no-products"><p>No products match your search.</p></div>`;
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement("article");
+        card.className = "product-card";
+        card.setAttribute("role", "listitem");
+        card.innerHTML = `
+          <div class="product-img-wrap" data-id="${p.id}" tabindex="0" role="button" aria-label="View ${p.name}">
+            <img src="${p.image}" alt="${p.name}" loading="lazy" width="300" height="180">
+            ${p.prescription ? '<span class="product-badge">Prescription</span>' : ''}
+          </div>
+          <div class="product-body">
+            <h3>${p.name}</h3>
+            <div class="product-cat">${p.category}</div>
+            <p class="product-desc">${p.description.substring(0, 110)}${p.description.length > 110 ? "…" : ""}</p>
+            ${p.prescription ? '<div class="product-notice">Prescription medicine – consult a healthcare professional.</div>' : ''}
+            <button type="button" class="btn btn-primary btn-sm contact-pharm" data-id="${p.id}">Contact Pharmacy</button>
+          </div>
+        `;
+        productsGrid.appendChild(card);
+      });
+
+      // Image click → modal
+      productsGrid.querySelectorAll(".product-img-wrap").forEach(el => {
+        el.addEventListener("click", () => openModal(+el.dataset.id));
+        el.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(+el.dataset.id); } });
+      });
+      productsGrid.querySelectorAll(".contact-pharm").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const p = PRODUCTS.find(x => x.id === +btn.dataset.id);
+          const msg = encodeURIComponent(`Hello Galillee Medical Center, I would like to enquire about: ${p.name}`);
+          window.open(`https://wa.me/${CONFIG.whatsapp}?text=${msg}`, "_blank");
+        });
+      });
+    }
+
+    filterBtns.addEventListener("click", e => {
+      if (e.target.classList.contains("filter-btn")) {
+        filterBtns.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        e.target.classList.add("active");
+        currentFilter = e.target.dataset.filter;
+        renderProducts();
+      }
+    });
+
+    searchInput.addEventListener("input", () => {
+      currentSearch = searchInput.value.trim();
+      renderProducts();
+    });
+
+    renderProducts();
+
+    // Modal
+    const modal = document.getElementById("productModal");
+    function openModal(id) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p) return;
+      document.getElementById("modalImg").src = p.image;
+      document.getElementById("modalImg").alt = p.name;
+      document.getElementById("modalTitle").textContent = p.name;
+      document.getElementById("modalCat").textContent = p.category;
+      document.getElementById("modalDesc").textContent = p.description;
+      const notice = document.getElementById("modalNotice");
+      if (p.prescription) {
+        notice.style.display = "block";
+        notice.textContent = "Prescription medicines are supplied according to applicable requirements. Consult a qualified healthcare professional before using medicines.";
+      } else {
+        notice.style.display = "none";
+      }
+      const contactBtn = document.getElementById("modalContact");
+      contactBtn.onclick = (e) => {
+        e.preventDefault();
+        const msg = encodeURIComponent(`Hello Galillee Medical Center, I would like to enquire about: ${p.name}`);
+        window.open(`https://wa.me/${CONFIG.whatsapp}?text=${msg}`, "_blank");
+      };
+      modal.classList.add("show");
+      document.body.style.overflow = "hidden";
+      document.getElementById("modalClose").focus();
+    }
+    function closeModal() {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+    document.getElementById("modalClose").addEventListener("click", closeModal);
+    modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+    // Forms
+    document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+      }
+      // In production connect to backend. For now show success.
+      this.style.display = "none";
+      document.getElementById("formSuccess").classList.add("show");
+    });
+
+    function resetForm() {
+      const form = document.getElementById("appointmentForm");
+      form.reset();
+      form.style.display = "block";
+      document.getElementById("formSuccess").classList.remove("show");
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+      }
+      alert("Thank you. Your message has been noted. We will respond as soon as possible. (Connect this form to your preferred backend or email service for live use.)");
+      this.reset();
+    });
+
+    // Set min date for appointment
+    const dateInput = document.getElementById("prefDate");
+    if (dateInput) {
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.setAttribute("min", today);
+    }
+  </script>
+</body>
+</html>
